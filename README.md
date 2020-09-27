@@ -33,7 +33,7 @@ static const u1_t PROGMEM APPEUI[8]  = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0
 ```
 static const u1_t PROGMEM APPKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // msb
 ```
-<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/appeui.png" height=200px>
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/appkey.png" height=200px>
 
 ## TTN Decoder
 ```
