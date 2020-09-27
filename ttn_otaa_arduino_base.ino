@@ -8,7 +8,7 @@ void os_getArtEui (u1_t* buf) {memcpy_P(buf, APPEUI, 8 );}
 void os_getDevKey (u1_t* buf) {memcpy_P(buf, APPKEY, 16);} 
 
 // Deep sleep lib
-#include "deepsleep.h"
+#include "libs/deepsleep.h"
 #define ENABLE_DEEP_SLEEP                // Enable deep sleep, otherwise use delay
 #define SLEEP_TIME_SEC 250
 union {
@@ -17,7 +17,7 @@ union {
 } sleep_time_sec;
 
 // Lib to read battery voltage
-#include "readvolt.h"
+#include "libs/readvolt.h"
 //#define COINCELL
 #ifdef COINCELL                          // If device is powered by a coin cell
   #define BATTERY_FULL            3300   // in mV, use max measured voltage
