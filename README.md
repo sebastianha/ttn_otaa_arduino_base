@@ -57,3 +57,7 @@ Example (set sleep time to 1000 seconds):
   "sleepTimeSec": 1000
 }
 ```
+
+# References
+- Deep sleep code from http://www.gammon.com.au/power
+- Battery voltage code from http://provideyourown.com/2012/secret-arduino-voltmeter-measure-battery-voltage/
