@@ -1,5 +1,5 @@
 # ttn_otaa_arduino_base
-A base sketch for TTN experiments with Arduino.
+A base sketch for [The Things Network](https://www.thethingsnetwork.org/) experiments with Arduino.
 
 It includes OTAA support and the readings from the following sensors:
 - Battery
@@ -13,6 +13,13 @@ There is a counter which is limited to 1 byte (0-255) which wraps around. By sen
 
 # Configuration
 Copy `ttnconfig_sample.h` to `ttnconfig.h` and fill in the secrets from the TTN console
+
+```
+static const u1_t PROGMEM DEVEUI[8]  = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // lsb
+static const u1_t PROGMEM APPEUI[8]  = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // lsb
+static const u1_t PROGMEM APPKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // msb
+```
+Make sure that LSB / MSB setting is correct when copying from the TTN console
 
 ## TTN Decoder
 ```
