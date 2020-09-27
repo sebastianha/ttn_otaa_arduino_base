@@ -22,6 +22,8 @@ function Decoder(bytes, port) {
 }
 ```
 
+Counter is one byte. Battery are two bytes in percent multiplied by 100 before. Therefore, the precision is 2. Same applies for the temperature reading.
+
 Example:
 ```
 {
@@ -30,6 +32,8 @@ Example:
   "temp_ds": 0
 }
 ```
+
+Battery is given in percent, relative to the configured connected battery. Two options available: coin cell (2.5–3.3V) or lithium battery (3.0–4.2V). Temperature is in °C.
 
 ## TTN Encoder
 ```
