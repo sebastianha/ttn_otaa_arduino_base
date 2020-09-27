@@ -12,14 +12,28 @@ There is a counter which is limited to 1 byte (0-255) which wraps around. By sen
 <img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/arduino_1.jpg" height=200px> <img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/arduino_2.jpg" height=200px> <img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/case.jpg" height=200px>
 
 # Configuration
-Copy `ttnconfig_sample.h` to `ttnconfig.h` and fill in the secrets from the TTN console
 
+## TTN details
+
+Copy `ttnconfig_sample.h` to `ttnconfig.h` and fill in the secrets from the TTN console. Make sure that LSB / MSB setting is correct when copying from the TTN console.
+
+### DEVEUI
 ```
 static const u1_t PROGMEM DEVEUI[8]  = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // lsb
+```
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/deveui.png" height=200px>
+
+### APPEUI
+```
 static const u1_t PROGMEM APPEUI[8]  = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // lsb
+```
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/appeui.png" height=200px>
+
+### APPKEY
+```
 static const u1_t PROGMEM APPKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // msb
 ```
-Make sure that LSB / MSB setting is correct when copying from the TTN console
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/appeui.png" height=200px>
 
 ## TTN Decoder
 ```
