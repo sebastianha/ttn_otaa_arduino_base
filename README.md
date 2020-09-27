@@ -21,19 +21,19 @@ Copy `ttnconfig_sample.h` to `ttnconfig.h` and fill in the secrets from the TTN 
 ```
 static const u1_t PROGMEM DEVEUI[8]  = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // lsb
 ```
-<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/deveui.png" height=200px>
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/deveui.png" height=100px>
 
 ### APPEUI
 ```
 static const u1_t PROGMEM APPEUI[8]  = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // lsb
 ```
-<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/appeui.png" height=200px>
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/appeui.png" height=100px>
 
 ### APPKEY
 ```
 static const u1_t PROGMEM APPKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // msb
 ```
-<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/appkey.png" height=200px>
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/appkey.png" height=100px>
 
 ## TTN Decoder
 ```
@@ -46,10 +46,12 @@ function Decoder(bytes, port) {
   return decoded;
 }
 ```
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/decoder.png" height=100px>
 
 Counter is one byte. Battery are two bytes in percent multiplied by 100 before. Therefore, the precision is 2. Same applies for the temperature reading.
 
-Example:
+### Example:
+(no temperature sensor connected, battery 35%)
 ```
 {
   "battery": 35,
@@ -71,8 +73,10 @@ function Encoder(object, port) {
   return bytes;
 }
 ```
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/encoder.png" height=100px>
 
-Example (set sleep time to 1000 seconds):
+### Example
+(set sleep time to 1000 seconds):
 ```
 {
   "sleepTimeSec": 1000
