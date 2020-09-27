@@ -64,4 +64,5 @@ Example (set sleep time to 1000 seconds):
 - Battery voltage code from http://provideyourown.com/2012/secret-arduino-voltmeter-measure-battery-voltage/
 
 # License
-GNU GENERAL PUBLIC LICENSE, Version 3
+[GNU GENERAL PUBLIC LICENSE, Version 3](./LICENSE)
+
