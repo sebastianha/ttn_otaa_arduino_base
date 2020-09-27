@@ -62,3 +62,6 @@ Example (set sleep time to 1000 seconds):
 - Based on https://github.com/matthijskooijman/arduino-lmic/tree/master/examples/ttn-otaa
 - Deep sleep code from http://www.gammon.com.au/power
 - Battery voltage code from http://provideyourown.com/2012/secret-arduino-voltmeter-measure-battery-voltage/
+
+# License
+GNU GENERAL PUBLIC LICENSE, Version 3
