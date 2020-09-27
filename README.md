@@ -1,6 +1,8 @@
 # ttn_otaa_arduino_base
 A base sketch for TTN experiments with Arduino.
 
+<img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/arduino_1.jpg" height=200px> <img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/arduino_2.jpg" height=200px> <img src="https://raw.githubusercontent.com/sebastianha/ttn_otaa_arduino_base/master/doc/images/case.jpg" height=200px>
+
 It includes OTAA support and the readings from the following sensors:
 - Battery
 - DS18B20
